@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediaPipe Pose OSC Web App</title>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <video class="input_video"></video>
+    <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+  </div>
+  <div class="control-panel">
+    <input type="text" id="oscIp" placeholder="OSC IP Address">
+    <input type="number" id="oscPort" placeholder="OSC Port">
+    <button id="connectOsc">Connect OSC</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
